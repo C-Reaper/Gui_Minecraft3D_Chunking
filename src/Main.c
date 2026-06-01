@@ -262,8 +262,8 @@ void* Worker_Thread(void* arg){
 void Setup(AlxWindow* w){
 	Menu_Set(1);
 
-	RGA_Set(Time_Nano());
-	RGA_Get(6969);
+	Random_Set(Time_Nano());
+	Random_Get(6969);
 
 	meshCube1 = (mesh){ Vector_New(sizeof(Tri3D)) };
 	meshCube2 = (mesh){ Vector_New(sizeof(Tri3D)) };
